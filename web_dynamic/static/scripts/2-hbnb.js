@@ -17,6 +17,8 @@ $(document).ready(function () {
     if (data.status === 'OK') {
       $('#api_status').css('background-color', '');
       $('#api_status').addClass('available');
+    } else {
+        $('#api_status').removeClass('available');
     }
   });
 });
